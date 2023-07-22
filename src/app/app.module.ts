@@ -8,10 +8,11 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { MenuComponent } from './shared/components/menu/menu.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
+import {HttpClientModule} from '@angular/common/http'
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, FooterComponent, MenuComponent],
-  imports: [BrowserModule, AppRoutingModule,BrowserAnimationsModule, MaterialModule],
+  imports: [BrowserModule, AppRoutingModule,BrowserAnimationsModule, MaterialModule,HttpClientModule],
   providers: [],
   bootstrap: [AppComponent],
 })

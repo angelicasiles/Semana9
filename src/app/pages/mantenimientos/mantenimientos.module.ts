@@ -5,6 +5,7 @@ import { MantenimientosRoutingModule } from './mantenimientos-routing.module';
 import { MantenimientosComponent } from './mantenimientos.component';
 import { ClientesComponent } from './clientes/clientes.component';
 import { ProductosComponent } from './productos/productos.component';
+import { MaterialModule } from 'src/app/material.module';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ProductosComponent } from './productos/productos.component';
   ],
   imports: [
     CommonModule,
-    MantenimientosRoutingModule
+    MantenimientosRoutingModule,
+    MaterialModule
   ]
 })
 export class MantenimientosModule { }

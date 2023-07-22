@@ -6,9 +6,9 @@ import { checkRoles } from "../middleware/roles";
 const routes = Router();
 
 routes.get(
-  "",
+  ""/*,
   checkjwt,
-  checkRoles(["admin", "user"]),
+  checkRoles(["admin", "user"])*/,
   ProductosController.getAll
 );
 routes.get("/:id", ProductosController.getById);
